@@ -1,4 +1,4 @@
-## challenges-and-data-structures
+### challenges-and-data-structures
 ### whiteborard images
 
 ### challenge A:Array Reversal

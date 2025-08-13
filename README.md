@@ -6,16 +6,16 @@
 
 *
 
-![Array-Reversal-whiteboard](./![alt text](image.png))
+![Array-Reversal-whiteboard](./whiteboard-challenges/./array-reversal.png)
 
 ### challenge B:Most frequent number
 
-![Most frequent number whiteboard](./![alt text](image-1.png))
+![Most frequent number whiteboard](./whiteboard-challenges/./mostfrequent-number.png)
 
 ### Whitebord Images
 
 challenge 2: Minimum Value
-![Minimum-Value](./![alt text](image.png))
+![Minimum-Value](./whiteboard-challenges/./minimumvalue.png)
 
 ### Challenge 03: Reverse Characters
 
@@ -23,4 +23,12 @@ challenge 2: Minimum Value
 
 ### Output Screenshot
 
-![Console Output](./![alt text](image-1.png))
+![Console Output](./Reverse-characters/./reverse-characters.png)
+
+### Challenge 04: Rrmove Middle Value
+
+![Link-to-Challenge-3](./Remove-middle-value/README.md)
+
+### Output-Screenshot
+
+![Console Output](./Remove-middle-value/removemiddle.png)

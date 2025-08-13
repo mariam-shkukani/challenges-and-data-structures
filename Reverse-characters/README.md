@@ -6,6 +6,6 @@ Write a function called ReverseCharacters that takes a single string as input. W
 
 ## Whiteboard
 
-![Reverse-Characters Screenshot](./![alt text](image-1.png))
+![Reverse-Characters Screenshot](./reverse-characters.png)
 
 ## Example Output

@@ -27,8 +27,12 @@ challenge 2: Minimum Value
 
 ### Challenge 04: Rrmove Middle Value
 
-![Link-to-Challenge-3](./Remove-middle-value/README.md)
+![Link-to-Challenge-4](./Remove-middle-value/README.md)
 
 ### Output-Screenshot
 
 ![Console Output](./Remove-middle-value/removemiddle.png)
+
+### challenge 05: Linked List
+
+![Link-to-Challenge-5](/data%20structures/linkedlist/linked-list-implementation/README.md)

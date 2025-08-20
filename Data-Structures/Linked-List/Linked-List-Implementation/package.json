@@ -1,0 +1,16 @@
+{
+  "name": "linked-list-implementation",
+  "version": "1.0.0",
+  "description": "This project implements a Single Linked List in JavaScript.\r It includes basic operations: add, remove, print, search, and insert nodes.\r It also handles edge cases and demonstrates time and space complexity for each operation.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --verbose" ,
+    "start": "node \"./app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.0.5"
+  }
+}

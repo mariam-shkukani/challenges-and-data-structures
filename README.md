@@ -2,7 +2,7 @@
 
 ## whiteborard images
 
-### challenge A:Array Reversal
+### challenge 1/ A:Array Reversal
 
 *
 

@@ -35,4 +35,4 @@ challenge 2: Minimum Value
 
 ### challenge 05: Linked List
 
-![Link-to-Challenge-5](/data%20structures/linkedlist/linked-list-implementation/README.md)
+![Link-to-Challenge-5](/Data-Structures/Linked-List/Linked-List-Implementation/README.md)

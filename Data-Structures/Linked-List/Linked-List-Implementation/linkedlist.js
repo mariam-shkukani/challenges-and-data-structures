@@ -1,101 +1,130 @@
-// Data Structures/LinkedList/linkedList.js
-
+// Node class
 class Node {
-  constructor(data) {
-    this.data = data;
+  constructor(value) {
+    this.value = value;
     this.next = null;
   }
 }
 
+// LinkedList class
 class LinkedList {
   constructor() {
     this.head = null;
-    this.length = 0; // يساعدنا بفحص الفهارس
+    this.length = 0;
   }
 
-  add(data) {
-    const node = new Node(data);
+  // Append node at end
+  append(value) {
+    const newNode = new Node(value);
     if (!this.head) {
-      this.head = node;
-      this.length++;
-      return node;
+      this.head = newNode;
+    } else {
+      let current = this.head;
+      while (current.next) {
+        current = current.next;
+      }
+      current.next = newNode;
+    }
+    this.length++;
+    return this;
+  }
+
+  // Insert at specific index
+  insertAt(value, index) {
+    if (index < 0 || index > this.length) throw new RangeError('Index out of bounds');
+    const newNode = new Node(value);
+    if (index === 0) {
+      newNode.next = this.head;
+      this.head = newNode;
+    } else {
+      let current = this.head;
+      let prev = null;
+      let i = 0;
+      while (i < index) {
+        prev = current;
+        current = current.next;
+        i++;
+      }
+      prev.next = newNode;
+      newNode.next = current;
+    }
+    this.length++;
+  }
+
+  // Remove node by value
+  remove(value) {
+    if (!this.head) return false;
+    if (this.head.value === value) {
+      this.head = this.head.next;
+      this.length--;
+      return true;
     }
     let current = this.head;
-    while (current.next) current = current.next;
-    current.next = node;
-    this.length++;
-    return node;
+    let prev = null;
+    while (current && current.value !== value) {
+      prev = current;
+      current = current.next;
+    }
+    if (!current) return false;
+    prev.next = current.next;
+    this.length--;
+    return true;
   }
 
-  includes(data) {
+  // Check if value exists
+  includes(value) {
     let current = this.head;
     while (current) {
-      if (current.data === data) return true;
+      if (current.value === value) return true;
       current = current.next;
     }
     return false;
   }
 
-  remove(data) {
-    if (!this.head) return false; // إزالة من قائمة فاضية
-    // لو الأول هو الهدف
-    if (this.head.data === data) {
-      this.head = this.head.next;
-      this.length--;
-      return true;
-    }
-    let prev = this.head;
-    let current = this.head.next;
+  // Reverse the linked list
+  reverse() {
+    if (!this.head) return null;
+    let prev = null;
+    let current = this.head;
+    let next = null;
     while (current) {
-      if (current.data === data) {
-        prev.next = current.next;
-        this.length--;
-        return true;
-      }
+      next = current.next;
+      current.next = prev;
       prev = current;
-      current = current.next;
+      current = next;
     }
-    return false; // مش لاقيين القيمة
+    this.head = prev;
   }
 
-  insertAt(data, index) {
-    // index مسموح من 0 إلى length (الإدخال عند length = ذيل اللست)
-    if (typeof index !== 'number' || index < 0 || index > this.length) {
-      throw new RangeError(`Index out of bounds: ${index}`);
-    }
-    const node = new Node(data);
-    if (index === 0) {
-      node.next = this.head;
-      this.head = node;
-      this.length++;
-      return node;
-    }
-    // امشي لحد العنصر السابق للموضع المطلوب
-    let prev = this.head;
-    for (let i = 0; i < index - 1; i++) prev = prev.next;
-    node.next = prev.next;
-    prev.next = node;
-    this.length++;
-    return node;
-  }
-
+  // Convert list to string
   toString() {
-    // هيك رح يطلع: "Head -> 5 -> 10 -> 20 -> 30 -> null"
-    let parts = ['Head'];
+    let result = 'Head';
     let current = this.head;
     while (current) {
-      parts.push(String(current.data));
+      result += ` -> ${current.value}`;
       current = current.next;
     }
-    parts.push('null');
-    return parts.join(' -> ');
+    result += ' -> null';
+    return result;
   }
 
+  // Optional: print list to console
   printList() {
-    const s = this.toString();
-    console.log(s);
-    return s; // بنرجّعها لتسهيل الاختبار
+    const str = this.toString();
+    console.log(str);
+    return str;
+  }
+
+  // Convert to array (useful for tests)
+  toArray() {
+    const arr = [];
+    let current = this.head;
+    while (current) {
+      arr.push(current.value);
+      current = current.next;
+    }
+    return arr;
   }
 }
 
-module.exports = { Node, LinkedList };
+module.exports = { LinkedList };

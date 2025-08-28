@@ -33,6 +33,10 @@ challenge 2: Minimum Value
 
 ![Console Output](./Remove-middle-value/removemiddle.png)
 
-### challenge 05: Linked List
+### challenge 05-A: Linked List
 
 ![Link-to-Challenge-5](/Data-Structures/Linked-List/Linked-List-Implementation/README.md)
+
+### challenge 05-B: Reverse Linked List
+
+![Linked List Reverse](./Data-Structures/Linked-List/Linked-List-Implementation/Reverse/README.md)

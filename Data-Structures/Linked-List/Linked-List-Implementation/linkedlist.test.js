@@ -3,19 +3,19 @@
 const { LinkedList } = require('./linkedlist');
 
 describe('linkedlist', () => {
-  test('adds nodes to the end', () => {
+  test('appends nodes to the end', () => {
     const list = new LinkedList();
-    list.add(5);
-    list.add(10);
-    list.add(20);
-    list.add(30);
+    list.append(5);
+    list.append(10);
+    list.append(20);
+    list.append(30);
     expect(list.toString()).toBe('Head -> 5 -> 10 -> 20 -> 30 -> null');
     expect(list.length).toBe(4);
   });
 
   test('removes a node by value', () => {
     const list = new LinkedList();
-    [5, 10, 20, 30].forEach(v => list.add(v));
+    [5, 10, 20, 30].forEach(v => list.append(v));
     const removed = list.remove(10);
     expect(removed).toBe(true);
     expect(list.toString()).toBe('Head -> 5 -> 20 -> 30 -> null');
@@ -25,13 +25,13 @@ describe('linkedlist', () => {
   test('remove returns false if value not found or list empty', () => {
     const list = new LinkedList();
     expect(list.remove(99)).toBe(false);
-    list.add(1);
+    list.append(1);
     expect(list.remove(99)).toBe(false);
   });
 
   test('includes() works', () => {
     const list = new LinkedList();
-    [5, 10, 20, 30].forEach(v => list.add(v));
+    [5, 10, 20, 30].forEach(v => list.append(v));
     expect(list.includes(20)).toBe(true);
     expect(list.includes(10)).toBe(true);
     list.remove(10);
@@ -40,7 +40,7 @@ describe('linkedlist', () => {
 
   test('insertAt inserts at specific index', () => {
     const list = new LinkedList();
-    [5, 10, 20, 30].forEach(v => list.add(v));
+    [5, 10, 20, 30].forEach(v => list.append(v));
     list.insertAt(15, 2); // بعد 10 وقبل 20
     expect(list.toString()).toBe('Head -> 5 -> 10 -> 15 -> 20 -> 30 -> null');
     expect(list.length).toBe(5);
@@ -48,7 +48,7 @@ describe('linkedlist', () => {
 
   test('insertAt at head (index 0)', () => {
     const list = new LinkedList();
-    [10, 20].forEach(v => list.add(v));
+    [10, 20].forEach(v => list.append(v));
     list.insertAt(5, 0);
     expect(list.toString()).toBe('Head -> 5 -> 10 -> 20 -> null');
     expect(list.length).toBe(3);
@@ -56,7 +56,7 @@ describe('linkedlist', () => {
 
   test('insertAt throws on index > length', () => {
     const list = new LinkedList();
-    [5, 10].forEach(v => list.add(v));
+    [5, 10].forEach(v => list.append(v));
     expect(() => list.insertAt(99, 5)).toThrow(RangeError);
   });
 

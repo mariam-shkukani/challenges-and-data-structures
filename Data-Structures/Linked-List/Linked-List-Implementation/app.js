@@ -5,10 +5,10 @@ const { LinkedList } = require('./linkedlist');
 const list = new LinkedList();
 
 // إضافة
-list.add(5);
-list.add(10);
-list.add(20);
-list.add(30);
+list.append(5);
+list.append(10);
+list.append(20);
+list.append(30);
 
 // طباعة
 list.printList(); // Head -> 5 -> 10 -> 20 -> 30 -> null

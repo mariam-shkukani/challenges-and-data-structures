@@ -13,8 +13,8 @@ Files included:
 
 ## whiteboard
 
-![whiteboard](/Data-Structures/Linked-List/Linked-List-Implementation/whiteboard.png)
+![whiteboard](/Data-Structures/Linked-List/Linked-List-Implementation/docs/single-whiteboard.png)
 
 ### console-output
 
-![console-output](/Data-Structures/Linked-List/Linked-List-Implementation/console-output.png)
+![console-output](/Data-Structures/Linked-List/Linked-List-Implementation/docs/single-console-output.png)

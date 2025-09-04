@@ -1,6 +1,6 @@
 // Data Structures/LinkedList/linkedList.test.js
 
-const { LinkedList } = require('./linkedlist');
+const { LinkedList } = require('../linkedlist');
 
 describe('linkedlist', () => {
   test('appends nodes to the end', () => {

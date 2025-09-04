@@ -2,8 +2,8 @@
 
 ## Whiteboard
 
-![Whiteboard](./docs/reverse-whiteboarde.PNG)
+![Whiteboard](../docs/reverse-whiteboarde.PNG)
 
 ## Console Output
 
-![Console Output](./docs/console-output.PNG)
+![Console Output](../docs/Reverse-console-output.PNG)

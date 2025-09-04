@@ -1,4 +1,3 @@
-// Data Structures/LinkedList/app.js
 
 const { LinkedList } = require('./linkedlist');
 
@@ -34,4 +33,46 @@ try {
   list.insertAt(999, 100); // خطأ
 } catch (e) {
   console.error('Error inserting at invalid index:', e.message);
+}
+
+// ---------------- Merge Sorted Linked Lists ----------------
+const MergeSorted = require("./MergeSorted/mergeSorted");
+
+// قائمة 1
+const list1 = new LinkedList();
+list1.append(1);
+list1.append(3);
+list1.append(5);
+
+// قائمة 2
+const list2 = new LinkedList();
+list2.append(2);
+list2.append(4);
+list2.append(6);
+
+
+console.log("List 1 :");
+list1.printList();
+
+console.log("List 2 :");
+list2.printList();
+
+
+// دمج
+const merged = MergeSorted.mergeSortedLists(list1, list2);
+
+// طباعة الناتج
+console.log("Merged List:");
+if (typeof merged.printList === "function") {
+  merged.printList(); 
+} else {
+  
+  let cur = merged.head;
+  let output = "Head -> ";
+  while (cur) {
+    output += cur.value + " -> ";
+    cur = cur.next;
+  }
+  output += "null";
+  console.log(output);
 }

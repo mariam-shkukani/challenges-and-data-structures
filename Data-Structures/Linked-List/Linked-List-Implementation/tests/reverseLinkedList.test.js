@@ -1,4 +1,4 @@
-const { LinkedList } = require('../../linkedlist');
+const { LinkedList } = require('../linkedlist');
 
 describe('Reverse Linked List', () => {
   test('reverses a non-empty list (1->2->3 => 3->2->1)', () => {

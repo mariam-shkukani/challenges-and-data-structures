@@ -44,3 +44,7 @@ challenge 2: Minimum Value
 ### challenge 05-c: Merge-Sorted Linked List
 
 ![Linked List Merge](./Data-Structures/Linked-List/Linked-List-Implementation/MergeSorted/README.md)
+
+### challenge 05-D: Rotate Linked List
+
+![Linked List Merge](./Data-Structures/Linked-List/Linked-List-Implementation/RotateLinkedList/README.md)

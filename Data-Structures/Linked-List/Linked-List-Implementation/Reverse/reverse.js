@@ -1,5 +1,5 @@
 
-const { LinkedList } = require('../linkedlist');
+const  LinkedList  = require('../linkedlist');
 
 function demo() {
   const list = new LinkedList();
@@ -22,3 +22,4 @@ function demo() {
 }
 
 demo();
+

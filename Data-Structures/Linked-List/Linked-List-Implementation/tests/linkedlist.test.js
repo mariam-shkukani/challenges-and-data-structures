@@ -1,8 +1,6 @@
-// Data Structures/LinkedList/linkedList.test.js
+const LinkedList  = require('../linkedlist');
 
-const { LinkedList } = require('../linkedlist');
-
-describe('linkedlist', () => {
+describe('LinkedList', () => {
   test('appends nodes to the end', () => {
     const list = new LinkedList();
     list.append(5);
@@ -60,12 +58,12 @@ describe('linkedlist', () => {
     expect(() => list.insertAt(99, 5)).toThrow(RangeError);
   });
 
-  test('printList on empty list prints "Head -> null"', () => {
+  test('printList on empty list prints "Head ----> null"', () => {
     const list = new LinkedList();
     const spy = jest.spyOn(console, 'log').mockImplementation(() => {});
     const out = list.printList();
-    expect(out).toBe('Head -> null');
-    expect(spy).toHaveBeenCalledWith('Head -> null');
+    expect(out).toBe('Head ----> null');
+    expect(spy).toHaveBeenCalledWith('Head ----> null');
     spy.mockRestore();
   });
 });

@@ -48,3 +48,7 @@ challenge 2: Minimum Value
 ### challenge 05-D: Rotate Linked List
 
 ![Linked List Merge](./Data-Structures/Linked-List/Linked-List-Implementation/RotateLinkedList/README.md)
+
+### challenge Stack and Queue
+
+![Stack and Queue](./Data-Structures/stack-queue/stack-queue-imlementation/README.md)

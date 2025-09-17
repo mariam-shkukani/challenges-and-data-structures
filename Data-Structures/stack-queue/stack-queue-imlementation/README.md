@@ -2,7 +2,8 @@
 
 ## whiteboard
 
-![whiteboard](./images/whiteboard.PNG)
+![Stack-whiteboard](./images/stack-whiteboard.PNG)
+![Queue-whiteboard](./images/Queue-whiteboard.PNG)
 
 ### console-output
 

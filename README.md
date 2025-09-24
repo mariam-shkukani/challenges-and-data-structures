@@ -19,7 +19,7 @@ challenge 2: Minimum Value
 
 ### Challenge 03: Reverse Characters
 
-![Link-to-Challenge-3](./Reverse-characters/README.md)
+* [Link-to-Challenge-3](./Reverse-characters/README.md)
 
 ### Output Screenshot
 
@@ -27,7 +27,7 @@ challenge 2: Minimum Value
 
 ### Challenge 04: Rrmove Middle Value
 
-![Link-to-Challenge-4](./Remove-middle-value/README.md)
+* [Link-to-Challenge-4](./Remove-middle-value/README.md)
 
 ### Output-Screenshot
 
@@ -35,20 +35,24 @@ challenge 2: Minimum Value
 
 ### challenge 05-A:Single  Linked List
 
-![Link-to-Challenge-5](/Data-Structures/Linked-List/Linked-List-Implementation/README.md)
+* [Link-to-Challenge-5](/Data-Structures/Linked-List/Linked-List-Implementation/README.md)
 
 ### challenge 05-B: Reverse Linked List
 
-![Linked List Reverse](./Data-Structures/Linked-List/Linked-List-Implementation/Reverse/README.md)
+* [Linked List Reverse](./Data-Structures/Linked-List/Linked-List-Implementation/Reverse/README.md)
 
 ### challenge 05-c: Merge-Sorted Linked List
 
-![Linked List Merge](./Data-Structures/Linked-List/Linked-List-Implementation/MergeSorted/README.md)
+* [Linked List Merge](./Data-Structures/Linked-List/Linked-List-Implementation/MergeSorted/README.md)
 
 ### challenge 05-D: Rotate Linked List
 
-![Linked List Merge](./Data-Structures/Linked-List/Linked-List-Implementation/RotateLinkedList/README.md)
+* [Linked List Merge](./Data-Structures/Linked-List/Linked-List-Implementation/RotateLinkedList/README.md)
 
 ### challenge Stack and Queue
 
-![Stack and Queue](./Data-Structures/stack-queue/stack-queue-imlementation/README.md)
+* [Stack and Queue](./Data-Structures/stack-queue/stack-queue-imlementation/README.md)
+
+### challenge Min Stack
+
+* [Min Stack Challenge](./Data-Structures/stack-queue/Min-Stack/README.md)

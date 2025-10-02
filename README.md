@@ -56,3 +56,7 @@ challenge 2: Minimum Value
 ### challenge Min Stack
 
 * [Min Stack Challenge](./Data-Structures/stack-queue/Min-Stack/README.md)
+
+### challenge Delet Middle Element
+
+* [delet middle element Challenge](./Data-Structures/stack-queue/Delet-Middle-Element/README.md)

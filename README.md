@@ -61,6 +61,10 @@ challenge 2: Minimum Value
 
 * [delet middle element Challenge](./Data-Structures/stack-queue/Delet-Middle-Element/README.md)
 
-### challenge Tree Implemention
+### challenge Binary Tree
 
-* [Tree Implemention Challenge](./Data-Structures/Trees/TreeImplemention/README.md)
+* [Binary Tree Challenge](./Data-Structures/Trees/TreeImplemention/BinaryTree/README.md)
+
+### challenge Second Max Value
+
+* [Second Max Value Challenge](./Data-Structures/Trees/TreeImplemention/SecondMaxValue/README.md)

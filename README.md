@@ -68,3 +68,7 @@ challenge 2: Minimum Value
 ### challenge Second Max Value
 
 * [Second Max Value Challenge](./Data-Structures/Trees/TreeImplemention/SecondMaxValue/README.md)
+
+### Leaf-Sum
+
+* [Leaf-Sum Challenge](./Data-Structures/Trees/TreeImplemention/LeafSum/README.md)
